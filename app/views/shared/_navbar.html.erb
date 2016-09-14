@@ -9,15 +9,15 @@
           <span class="icon-bar"></span>
         </button>
         <%= link_to surveys_path, class: 'navbar-brand' do %>
-          <%= render 'shared/rr_logo' %>
+            <%= render 'shared/rr_logo' %>
         <% end -%>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="<%= is_active?(surveys_path) %>">
             <%= link_to surveys_path do %>
-              All surveys
-              <span class='badge'> <%= surveys_count %> </span>
+                All surveys
+                <span class='badge'> <%= surveys_count %> </span>
             <% end -%>
           </li>
           <li class="dropdown <%= is_active?(new_survey_path) %>">
@@ -30,18 +30,18 @@
           </li>
         </ul>
         <% if current_user %>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <p class="navbar-text">
-                Logged in as:
-                <b> <%= current_user.name %> </b>
-                <%= link_to '(change name)', '#', 'data-toggle': 'modal', 'data-target': '#submit-name-modal' %>
-              </p>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <p class="navbar-text">
+                  Logged in as:
+                  <b> <%= current_user.name %> </b>
+                  <%= link_to '(change name)', '#', 'data-toggle': 'modal', 'data-target': '#submit-name-modal' %>
+                </p>
+              </li>
+            </ul>
         <% end %>
       </div>
     </div>
   </div>
-  <%= render 'shared/gem_header_info' %>
+
 </header>
