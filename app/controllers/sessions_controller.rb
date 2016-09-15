@@ -5,11 +5,11 @@ class SessionsController < ApplicationController
   def create
   	user = User.find_by(name: params[:session][:name].downcase)
   	password = params[:session][:pass]
-    if user && user.pass = password
+    if user && (user.pass == password)
   		log_in user
   		redirect_to surveys_path
   	else
-  		flash[:danger] = 'Combinacion incorrecta de correo/contrasena'
+  		flash.now[:danger] = 'Combinacion incorrecta de correo/contrasena'
   		render 'new'
   	end 
   end

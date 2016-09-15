@@ -7,8 +7,7 @@
     <%= render 'form' %>
   <% else %>
     <p>
-      Ya no puedes realizar más intentos para esta encuesta
-      You have spent all the possible attempts to answer this Survey
+      Ya no puedes realizar más intentos para esta encuesta.
     </p>
     <p>
       <%= link_to delete_user_attempts_path(@survey.id, session[:user_id]), method: :delete do %>
