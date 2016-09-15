@@ -1,7 +1,16 @@
 class UsersController < ApplicationController
+  def new
+    @user = User.new
+  end
+
   def create
-    session[:user_id] = User.create(user_params).id
-    redirect_to :back
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = "Usuario creado exitosamente. Bienvenido a Thinker!"
+      redirect_to surveys_path
+    else
+      render 'new'
+    end
   end
 
   def change_name
@@ -11,6 +20,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:name)
+    params.require(:user).permit(:name, :pass)
   end
 end
