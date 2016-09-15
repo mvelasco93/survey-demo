@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Thinker</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<%= render 'shared/submit_name_modal' %>
-<%= render 'shared/navbar' %>
-<%= render 'shared/flash' %>
-<%= yield %>
+  <head>
+    <title>Thinker</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'shared/submit_name_modal' %>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flash' %>
+    <%= yield %>
 
-</body>
+  </body>
 </html>

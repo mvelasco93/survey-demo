@@ -1,9 +1,9 @@
 <div class="container">
   <div class="flash">
     <% flash.each do |name, msg| %>
-      <div class="alert alert-<%= correct_flash_name(name) %>" role="alert">
+      <p class="alert alert-<%= correct_flash_name(name) %>">
         <%= msg %>
-      </div>
+      </p>
     <% end %>
   </div>
 </div>

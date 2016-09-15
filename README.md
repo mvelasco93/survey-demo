@@ -1,5 +1,10 @@
-# Survey Demo
+# Thinker!
 
-This is the demo page for [survey](https://github.com/runtimerevolution/survey), a gem that brings quizzes, surveys and contests into your Rails application.
+Proyecto del segundo parcial de la materia "Lenguajes de Programación"
 
-Can be tested here: [Survey Demo](http://survey-demo.herokuapp.com/)
+Requiere
+[*] PostgreSQL
+[*] NodeJS
+[*] Varias gemas extras
+
+Esta aplicación está basada en [Survey Demo](http://survey-demo.herokuapp.com/)

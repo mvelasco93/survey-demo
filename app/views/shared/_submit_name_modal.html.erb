@@ -1,9 +1,9 @@
-<div id="submit-name-modal" class="modal fade" data-new-user="<%= !current_user %>">
+<div id="submit-name-modal" class="modal fade"  data-new-user="<%= !current_user %>">
   <%= user_form do |f| %>
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <h4> <%= f.label :name, '¿Como te llamas??' %> </h4>
+          <h4> <%= f.label :name, '¿Cómo te llamas??' %> </h4>
           <div class="form-group">
             <div class="input-group">
               <span class="input-group-addon">
@@ -11,13 +11,14 @@
               </span>
               <%= f.text_field :name, class: 'form-control' %>
             </div>
-            <span class="help-block">This is your username. It will be associated with each survey participation you make</span>
+            <span class="help-block">Este es tu nombre de usuario. Úsalo cada vez que estés en esta página</span>
           </div>
         </div>
         <div class="modal-footer">
-          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+          <%= f.submit 'Aceptar', class: 'btn btn-primary' %>
         </div>
       </div>
     </div>
   <% end %>
 </div>
+

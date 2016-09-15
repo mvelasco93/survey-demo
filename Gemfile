@@ -7,6 +7,7 @@ gem 'rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass'
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
@@ -16,7 +17,6 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'coffee-script-source'
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -35,6 +35,11 @@ gem 'client_side_validations', git: 'https://github.com/DavyJonesLocker/client_s
 gem 'newrelic_rpm' # new relic instrumentation (heroku plugin)
 gem 'tzinfo-data'
 gem 'execjs'
+
+group :assets do
+  gem 'jquery-ui-rails'
+  gem 'jquery-modal-rails'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
