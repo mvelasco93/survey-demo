@@ -19,6 +19,10 @@ Rails.application.routes.draw do
   delete 'attempts/:survey_id/:user_id' => 'attempts#delete_user_attempts', as: :delete_user_attempts
   post 'user/:id/change_name' => 'users#change_name', as: :change_user_name
 
+  get  '/login',     to: 'sessions#new'
+  post   '/login',     to: 'sessions#create'
+  delete '/logout',    to: 'sessions#destroy'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
