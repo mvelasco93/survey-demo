@@ -1,2 +1,18 @@
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+<% flash.each do |message_type, message| %>
+	<div class="alert alert-<%= message_type %> fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a><%= message %></div>
+<% end %>
+<section class="container-fluid">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+		<%= image_tag("thinker.png", alt: "Thinker ESPOL", class: "img-responsive center-block imgpad") %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 col-md-offset-4">
+			<%= link_to "Log in", "#", class: "btn btn-lg btn-primary center-block" %>
+		</div>
+		<div class="col-md-2">
+			<%= link_to "Sign up", "#", class: "btn btn-lg btn-primary center-block" %>
+		</div>
+	</div>
+</section>
