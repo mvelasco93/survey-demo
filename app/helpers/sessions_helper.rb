@@ -8,11 +8,11 @@ module SessionsHelper
     @current_user = nil
   end
 
-	def current_teacher
-  	@current_user ||= Teacher.find_by(id: session[:teacher_id])
+	def current_user
+  	@current_user ||= User.find_by(id: session[:user_id])
 	end
 
 	def logged_in?
-	 !current_teacher.nil?
+	 !current_user.nil?
 	end
 end

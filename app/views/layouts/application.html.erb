@@ -7,10 +7,12 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flash' %>
-    <%= yield %>
-
+    <% if logged_in? %>
+      <%= render 'shared/navbar' %>
+      <%= render 'shared/flash' %>
+      <%= yield %>
+    <% else %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>

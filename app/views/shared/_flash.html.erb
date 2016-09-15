@@ -2,7 +2,7 @@
   <div class="flash">
     <% flash.each do |name, msg| %>
       <p class="alert alert-<%= correct_flash_name(name) %>">
-        <%= msg %>
+        <%= msg %><a href="#" class="close" data-dismiss="alert" aria-label="close">&times</a>
       </p>
     <% end %>
   </div>

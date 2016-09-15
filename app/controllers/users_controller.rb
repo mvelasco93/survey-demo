@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Usuario creado exitosamente. Bienvenido a Thinker!"
-      redirect_to surveys_path
+      redirect_to root_path
     else
       render 'new'
     end

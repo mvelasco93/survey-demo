@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   resources 'users', only: [:create]
 
   delete 'attempts/:survey_id/:user_id' => 'attempts#delete_user_attempts', as: :delete_user_attempts
-  post 'user/:id/change_name' => 'users#change_name', as: :change_user_name
-  get  '/signup',    to: 'teachers#new'
+  
+  get  '/signup',    to: 'users#new'
   get  '/login',     to: 'sessions#new'
   post   '/login',     to: 'sessions#create'
   delete '/logout',    to: 'sessions#destroy'

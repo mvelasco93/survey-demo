@@ -29,6 +29,9 @@
                   Usuario:
                   <b> <%= current_user.name %> </b>
                 </p>
+                <p class="navbar-text">
+                  <%= link_to 'Log out', logout_path, method: :delete, data: { confirm: 'Esta seguro?' } %>
+                </p>
               </li>
             </ul>
         <% end %>
