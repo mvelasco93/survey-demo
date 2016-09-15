@@ -3,6 +3,7 @@
     <%= @attempt.survey.name %>
     <p><small><%= @attempt.survey.description %></small></p>
   </h2>
+
   <ol class="questions">
     <% @attempt.answers.each do |answer| %>
       <li>

@@ -1,17 +1,13 @@
 <header>
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="navbar navbar-default navbar-static-top navbar-fixed-top" role="navigation">
     <div class="container">
+
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%= link_to surveys_path, class: 'navbar-brand' do %>
-            <%= render 'shared/rr_logo' %>
-        <% end -%>
+        <a class="navbar-brand" href="#">
+          <img src="https://i.gyazo.com/8f7dbd641dff308b869102e029e55895.png" class="img-responsive" href="#">
+        </a>
       </div>
+
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="<%= is_active?(surveys_path) %>">

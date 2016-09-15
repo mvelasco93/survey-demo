@@ -3,7 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  padding-top: 60px;
   padding-bottom: 50px;
+  background-color: rgba(249,242,231, 0.40);
+  font-family: "Trebuchet MS", Verdana, sans-serif;
 }
 
 a:hover,
@@ -126,7 +129,9 @@ a:focus {
 
 .survey-buttons {
   min-width: 150px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
 }
+
 
 .table-center {
   text-align: center;
@@ -141,6 +146,7 @@ a:focus {
   width: 35px;
   vertical-align: middle;
   margin-right: 3px;
+
 }
 
 #logo-text {
@@ -151,6 +157,10 @@ a:focus {
 
 .navbar {
   margin-bottom: 0;
+  background-color: #69D2E7;
+  font-size: medium;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  height: 50px;
 }
 
 .gem-info {
