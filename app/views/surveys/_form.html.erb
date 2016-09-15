@@ -10,10 +10,8 @@
         <h4><%= f.label :attempts_number, 'Cantidad máxima de intentos' %></h4>
         <%= f.number_field :attempts_number, min: 0, class: 'form-control' %>
       </div>
-      <div class='form-group col-sm-4'>
-        <h4><%= f.label :'Activa' %></h4>
-        <%= f.select :active, ['true', 'false'], {}, class: 'form-control' %>
-      </div>
+      <%= f.hidden_field :active, value: 'true' %>
+      
     </div>
     <div class='row'>
       <div class='form-group col-sm-12'>
@@ -32,7 +30,7 @@
       <% end %>
     </div>
     <br/>
-    <%= link_to_add_field 'Add a new Question', f, :questions %>
+    <%= link_to_add_field 'Añadir pregunta', f, :questions %>
   </div>
   <%= f.submit 'Submit', class: 'pull-right btn btn-primary' %>
   <% end -%>

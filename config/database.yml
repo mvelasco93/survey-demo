@@ -21,13 +21,13 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   username: 'postgres'
-  password: 'rubik'
+  password: 'cd3fg3cd3'
 
 development:
   <<: *default
   database: survey-demo_development
   username: 'postgres'
-  password: 'rubik'
+  password: 'cd3fg3cd3'
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -63,7 +63,7 @@ test:
   <<: *default
   database: survey-demo_test
   username: 'postgres'
-  password: 'rubik'
+  password: 'cd3fg3cd3'
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -88,4 +88,4 @@ production:
   <<: *default
   database: survey-demo_production
   username: 'postgres'
-  password: 'rubik'
+  password: 'cd3fg3cd3'
