@@ -25,6 +25,26 @@ module ApplicationHelper
     @user ||= User.find_by(id: session[:user_id])
   end
 
+  def log_in(user)
+    session[:user_id] = user.id
+  end
+
+  def log_out
+    session.delete(:user_id)
+    @user = nil
+  end
+
+  def logged_in?
+   !current_user.nil?
+  end
+
+  def require_login
+    unless logged_in?
+      flash[:warning] = "Debe iniciar sesion con sus credenciales!"
+      redirect_to root_path
+    end
+  end
+
   def user_form
     common_options = { validate: true, html: { class: 'user-form' } }
     form_options = current_user ? [ current_user, { url: change_user_name_path(current_user.id), method: :post, validate: true }.merge(common_options) ] : [ User.new, { validate: true }.merge(common_options) ]
