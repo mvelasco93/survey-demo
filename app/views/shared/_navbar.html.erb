@@ -4,7 +4,9 @@
 
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <img src="https://i.gyazo.com/8f7dbd641dff308b869102e029e55895.png" class="img-responsive" href="#">
+          <%= link_to surveys_path do %>
+            <img src="https://i.gyazo.com/8f7dbd641dff308b869102e029e55895.png">
+          <% end -%>
         </a>
       </div>
 
@@ -24,9 +26,9 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                 <p class="navbar-text">
-                  Iniciado como:
+                  Usuario:
                   <b> <%= current_user.name %> </b>
-                  <%= link_to '(change name)', '#', 'data-toggle': 'modal', 'data-target': '#submit-name-modal' %>
+                  <%= link_to ' Cambiar', '#', 'data-toggle': 'modal', 'data-target': '#submit-name-modal' %>
                 </p>
               </li>
             </ul>
