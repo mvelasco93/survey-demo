@@ -78,18 +78,18 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  # database: dd7kju8ivierjb
-   #username: 'ckpdumnjwtnjal'
-  # password: 'aUylrebhgYrInNR2_8xmgiSjoz'
+ <<: *default
+ url: <%= ENV['DATABASE_URL'] %>
+ # database: dd7kju8ivierjb
+ #username: 'ckpdumnjwtnjal'
+ # password: 'aUylrebhgYrInNR2_8xmgiSjoz'
 
 default: &default
  adapter: postgresql
  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
-  url: <%= ENV['DATABASE_URL'] %>
-   username: 'ckpdumnjwtnjal'
-   password: 'aUylrebhgYrInNR2_8xmgiSjoz'
+ # For details on connection pooling, see rails configuration guide
+ # http://guides.rubyonrails.org/configuring.html#database-pooling
+ pool: 5
+ url: <%= ENV['DATABASE_URL'] %>
+ username: 'ckpdumnjwtnjal'
+ password: 'aUylrebhgYrInNR2_8xmgiSjoz'
