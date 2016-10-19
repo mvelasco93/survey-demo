@@ -15,7 +15,6 @@
 # gem 'pg'
 #
 default: &default
-  database: dd7kju8ivierjb
   adapter: postgresql
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
@@ -87,6 +86,6 @@ test:
 #
 production:
   <<: *default
-  database: database: dd7kju8ivierjb
+  database: dd7kju8ivierjb
   username: 'nphgtcrkpiqjvi'
   password: 'tooZ4ZllsofP73Wg3M6_TCXc_I'
