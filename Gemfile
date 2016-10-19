@@ -17,6 +17,7 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'coffee-script-source'
+gem 'thin'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
