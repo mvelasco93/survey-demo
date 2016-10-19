@@ -78,7 +78,5 @@ test:
 #
 production:
   <<: *default
-  DATABASE_URL: "postgres://nphgtcrkpiqjvi:tooZ4ZllsofP73Wg3M6_TCXc_I@ec2-54-204-37-135.compute-1.amazonaws.com:5432/dd7kju8ivierjb"
-  database: dd7kju8ivierjb
-  username: 'nphgtcrkpiqjvi'
-  password: 'tooZ4ZllsofP73Wg3M6_TCXc_I'
+  url: <%= ENV['postgres://nphgtcrkpiqjvi:tooZ4ZllsofP73Wg3M6_TCXc_I@ec2-54-204-37-135.compute-1.amazonaws.com:5432/dd7kju8ivierjb'] %>
+
